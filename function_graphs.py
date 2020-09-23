@@ -1,4 +1,4 @@
-import main
+import min_func
 import matplotlib.pyplot as plt
 
 x = []
@@ -8,9 +8,9 @@ z = []
 free_space = range(-10, 11)
 for number in list(free_space):
     x.append(number)
-    y.append(main.f(number))
+    y.append(min_func.f(number))
     k.append(number)
-    z.append(main.g(number))
+    z.append(min_func.g(number))
 # print(x, y)
 plt.title('f(x) & g(x)')
 plt.xlabel('x')
