@@ -1,4 +1,4 @@
-import min_func
+from func import min_func
 import matplotlib.pyplot as plt
 
 x = []

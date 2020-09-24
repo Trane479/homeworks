@@ -1,4 +1,4 @@
-from fibonacci_gen import fibonacci
+from fib.fibonacci_gen import fibonacci
 
 
 amount_of_numbers = int(input('Введите желаемое количество чисел Фибоначчи - '))
