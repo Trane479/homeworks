@@ -7,9 +7,9 @@ class TestSimple(unittest.TestCase):
         test_list = [1, 2, 3, 4, 5, 6, 7]
         self.assertIsInstance(ev(test_list), list)
 
-    def test_int(self):
+    def test_even_list(self):
         test_list = [1, 2, 3, 4, 5, 6, 7]
-        self.assertTrue(ev(test_list), int)
+        self.assertEqual(ev(test_list), [2, 4, 6])
 
     def test_even(self):
         test_list = [1, 2, 3, 4, 5, 6, 7]
@@ -18,4 +18,4 @@ class TestSimple(unittest.TestCase):
 
     def test_257_number(self):
         test_list = [1, 2, 3, 4, 5, 6, 257, 12, 25, 14]
-        self.assertTrue(ev(test_list), None)
+        self.assertEqual(ev(test_list), [2, 4, 6])
